@@ -32,7 +32,7 @@ function toggleMenu() {
 function submitLink() {
   if (textInput.value === '') {
     spanError.classList.remove('hidden')
-    textInput.style.outline = '2px solid red'
+    textInput.style.border = '2px solid red'
   } else {
     spanError.classList.add('hidden')
     textInput.style.outline = 'none'
