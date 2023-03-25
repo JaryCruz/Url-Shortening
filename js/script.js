@@ -55,14 +55,11 @@ function makeLinkCard({ result: { original_link, full_short_link } }) {
     changeButtonState(e)
     copyShortUrl(full_short_link)
   })
-  storeInLocalStorage(full_short_link, original_link)
+  // Store link in local storage
+  shortenedLinks.push({full_short_link, original_link})
+  localStorage.setItem('shortenedLinks', JSON.stringify(shortenedLinks))
 
   linkContainer.append(shortLink)
-}
-
-function storeInLocalStorage(fullLink, originalLink) {
-  shortenedLinks.unshift({ fullLink, originalLink });
-  localStorage.setItem('shortenedLinks', JSON.stringify(shortenedLinks));
 }
 
 function copyShortUrl(url) {
