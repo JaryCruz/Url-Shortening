@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Shortly URL shortening API Challenge</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#" aria-label="home">
+            <img src="images/logo.svg" alt="" />
+          </a>
+        </li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+
+      <div>
+        <a href="#">Login</a>
+        <button class="btn-cyan">Sign Up</button>
+      </div>
+
+      <button class="btn-hamburger" data-btn-hamburger>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" data-mobile-menu>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Resources</a>
+      <a href="#">Login</a>
+      <button class="btn-cyan">Sign Up</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div>
+        <h1>More than just shorter links</h1>
+        <p>
+          Build your brand’s recognition and get detailed insights on how your
+          links are performing.
+        </p>
+        <button class="btn-cyan">Get Started</button>
+      </div>
+      <div class="header-img"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <div class="form-group-container" data-links-container>
+          <div class="input-group">
+            <input
+              data-input
+              type="text"
+              placeholder="Shorten a link here..."
+            />
+            <span data-error class="hidden">Please add a link</span>
+            <button data-btn-submit class="btn-cyan">Shorten it!</button>
+          </div>
+        </div>
+
+        <!-- Statistics Section -->
+        <section class="statistics-section">
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+          <div class="statistics-container">
+            <div class="stat-card">
+              <div class="logo-img">
+                <img src="images/icon-brand-recognition.svg" alt="" />
+              </div>
+              <h3>Brand Recognition</h3>
+              <p>
+                Boost your brand recognition with each click. Generic links
+                don’t mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+            <div class="stat-card">
+              <div class="logo-img">
+                <img src="images/icon-detailed-records.svg" alt="" />
+              </div>
+              <h3>Detailed Records</h3>
+              <p>
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+            <div class="stat-card">
+              <div class="logo-img">
+                <img src="images/icon-fully-customizable.svg" alt="" />
+              </div>
+              <h3>Fully Customizable</h3>
+              <p>
+                Improve brand awareness and content recoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Boost Links Section-->
+      <section class="boost-section">
+        <h2>Boost your links today</h2>
+        <button class="btn-cyan">Get Started</button>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <a href="#" aria-label="home">
+          <img src="images/logowhite.svg" alt="" />
+        </a>
+        <div class="footer-links">
+          <h4>Features</h4>
+          <a href="#">Link Shortening</a>
+          <a href="#">Branded Links</a>
+          <a href="#">Analytics</a>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <a href="#">Blog</a>
+          <a href="#">Developers</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Our Team</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" aria-label="twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" aria-label="pinterest">
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+          <a href="#" aria-label="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- New Link -->
+    <template id="template-link">
+      <div class="short-link">
+        <span></span>
+        <div>
+          <small></small>
+          <button class="btn-cyan">Copy</button>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
