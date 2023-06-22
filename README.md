@@ -1,3 +1,3 @@
-# Shortly URL shortening API Challenge
+# Shortly URL shortening API
 
-![Design preview for the Shortly URL shortening API coding challenge](./images/desktop-preview.jpg)
+![project-2](https://github.com/JaryCruz/Url-Shortening/assets/96601148/25e5f41c-04a0-48b3-9d0d-fdbec68502bd)
